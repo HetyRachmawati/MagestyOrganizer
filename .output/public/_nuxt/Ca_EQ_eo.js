@@ -1,0 +1,1 @@
+import{H as a,I as i,J as t,K as c}from"./BqTsYXpV.js";const d=a(async(u,f)=>{let e,o;const{$auth:s}=i(),n=s.getToken();if(!n)return t("/login");try{const r=([e,o]=c(()=>fetchUserProfile(n)),e=await e,o(),e);if(!r||r.level.role!=="admin")return t("/")}catch(r){return console.error("Error fetching user profile:",r),t("/")}});export{d as default};
